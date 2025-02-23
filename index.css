@@ -1,0 +1,196 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: DFkai-sb, sans-serif;
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal
+}
+.top{
+    background: url('../image/background.png');
+    padding: 1rem;
+}
+.top>h1{
+    font-size: 2.5rem;
+}
+.top>h3{
+    font-size: 1rem;
+}
+nav{
+    width: 100%;
+    background-color: black;
+
+}
+nav>ul{
+    display: flex;
+    list-style: none;
+    font-size: 1.25rem;
+}
+nav>ul>li{
+    padding: 0.8rem 1.2rem;
+}
+nav>ul>li>a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.3s linear;
+}
+nav>ul>li>a:hover{
+    color: yellow;
+}
+
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+main>section{
+    padding: 1rem;
+}
+.left{
+    flex: 1 1 200px;
+}
+.left>h3{
+    margin-bottom: 1rem;
+}
+.left img{
+    width: 90%;
+}
+.left>table{
+    margin-top: 1rem;
+}
+.left table,.left td{
+    padding: 0.25rem ;
+}
+
+.right{
+    flex: 4 1 500px;
+}
+.right>h3{
+    font-size: 1.5rem;
+    padding-top: 0.5rem;
+}
+p {
+    padding: 0.5rem 0rem;
+}
+.right ul{
+    margin-left: 2rem;
+}
+
+
+
+
+main.no-flex{
+    display: block;
+}
+.no-flex h3{
+    font-size: 1.5rem;
+}
+.no-flex ul{
+    list-style: none;
+}
+.no-flex ul li{
+    border: 3px solid burlywood;
+    margin: 2rem;
+    padding: 0.5rem;
+}
+.no-flex h4{
+    font-size: 1.5rem;
+    color: rgb(0, 90, 91);
+}
+.no-flex h5{
+    font-size: 1.05rem;
+    color: rgb(6, 120, 120);
+}
+ul.player {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    /* 文字不要換行 */
+    white-space: nowrap
+}
+ul.player li{
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0.8rem;
+}
+ul.player a{
+    text-decoration: none;
+    color: black;
+}
+
+
+.japan{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.japan .image{
+    flex: 1 1 300px;
+    /* 縮小時讓圖片能水平置中 */
+    display: flex;
+    align-items: center;
+}
+.japan img{
+    width: 100%;
+}
+.japan .info {
+    flex: 3 1 600px;
+    padding: 2rem;
+}
+.japan2{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+}
+.japan2 .info{
+    flex: 5 1 300px;
+    padding: 1rem;
+}
+.japan2 .info h3{
+    font-size: 2rem;
+    color: rgb(12, 122, 92);
+}
+.japan2 #piechart{
+    flex: 1 1 300px;
+}
+
+
+
+.china1 h3,.china2 h3{
+    font-size: 2rem;
+    color: rgb(12, 122, 92);
+}
+.china2 table{
+    min-width:1000px;
+}
+.china2 th{
+    color: white;
+    background-color: rgb(86, 224, 192);
+}
+.china2 table,.china2 th,.china2 td{
+    border: 1px solid white;
+    padding: 2px 4px;
+    border-collapse: collapse;
+}
+
+
+.taiwan h3{
+    font-size: 2rem;
+    color: rgb(12, 122, 92);
+}
+.taiwan ul{
+    padding-left: 2rem;
+}
+
+@media screen and (max-width:600px){
+    header nav ul{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:500px) {
+    ul.player{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
